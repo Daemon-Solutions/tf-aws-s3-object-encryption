@@ -8,3 +8,7 @@ variable "kms_key_description" {
 variable "encrypted_file_path" {}
 
 variable "encrypted_object" {}
+
+variable "bucket_versioning" {
+  default = false
+}

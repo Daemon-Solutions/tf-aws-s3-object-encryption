@@ -13,7 +13,7 @@ resource "aws_s3_bucket" "encrypted_bucket" {
   bucket = "${var.encrypted_bucket_name}"
 
   versioning {
-    enabled = true
+    enabled = "${var.bucket_versioning}"
   }
 }
 
